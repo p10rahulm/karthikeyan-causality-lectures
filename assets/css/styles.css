@@ -347,9 +347,10 @@ a:hover {
 }
 
 .mainer #Schedule .schedule-card .seminar-abstract {
+    width: 100%;
     /* color: #697285; */
     color: #5f5f5f;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     padding-top: 0.5em;
     border-top: 1px solid rgba(0, 26, 250, 0.12);
     font-weight: lighter;
@@ -383,6 +384,10 @@ a:hover {
     /*text-decoration-color: #f77e7e;*/
     text-decoration-color: #873307;
     font-size: max(14px,1.25em);
+    margin: auto 0;
+    padding-right: 15px;
+    color: #990027;
+    font-weight: bold;
 }
 
 .mainer #Schedule .schedule-card .seminar-card-affiliation {
