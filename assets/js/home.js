@@ -36,3 +36,9 @@ function stickyHeader(){
         headerElem.classList.add("sticky");
     }
 };
+
+function downloadCalendar(talkTitle, talkDesc, talkLocation, talkBegin, talkEnd) {
+    var cal = ics();
+    cal.addEvent(talkTitle, talkDesc, talkLocation, talkBegin, talkEnd);
+    cal.download();
+};

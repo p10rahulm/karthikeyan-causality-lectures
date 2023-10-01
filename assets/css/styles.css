@@ -111,7 +111,7 @@ a:hover {
         flex-grow: 1;
         flex-wrap: wrap;
     }
-    #Organizers .organizer-card{
+    #Schedule .schedule-card{
         text-align: center;
     }
     #Talks .author-card{
@@ -306,64 +306,86 @@ a:hover {
     margin-top: 15px;
 }
 
-.mainer #Organizers .organizer-card{
-    flex-basis: 360px;
-    flex-grow: 1;
-    flex-shrink: 0;
+.mainer #Schedule .schedule-card{
+    flex-basis: 100%;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 0;*/
     padding: 10px 20px;
     box-shadow: 5px 10px 18px #f4f4f4;
     border-radius: 5px;
 }
 
-.mainer #Organizers .organizer-card:hover {
+.mainer #Schedule .schedule-card:hover {
     /*transition: transform .75s;*/
     transition: transform .75s;
     /*transform: translateY(-10px);*/
     transform: translateY(-5px);
 }
 
-.mainer #Organizers .organizer-card {
+.mainer #Schedule .schedule-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
     /*justify-content: space-between;*/
-    /*justify-content: flex-start;*/
-    align-items: center;
-    /*align-items: center;*/
+    justify-content: flex-start;
+
 }
 
-.mainer #Organizers .organizer-card .speaker-image-holder {
+.mainer #Schedule .schedule-card .seminar-time {
+    padding-top: 0.5em;
+    line-height: 1.6;
+    /* font-style: italic; */
+    color: #4eca91;
+}
+
+.mainer #Schedule .schedule-card .seminar-location {
+    /* color: #777777; */
+    /* color: #63beff; */
+    color: #365d7999;
+    line-height: 1.6;
+}
+
+.mainer #Schedule .schedule-card .seminar-abstract {
+    /* color: #697285; */
+    color: #5f5f5f;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    border-top: 1px solid rgba(0, 26, 250, 0.12);
+    font-weight: lighter;
+}
+
+.mainer #Schedule .schedule-card .speaker-image-holder {
     flex-basis: 135px;
     flex-grow: 0;
     text-align: center;
     /*float: left;*/
 }
 
-.mainer #Organizers .organizer-card .speaker-image {
+.mainer #Schedule .schedule-card .speaker-image {
     height: 150px;
     width: 150px;
     margin: 25px auto;
     border-radius: 15%;
 }
 
-.mainer #Organizers .organizer-card .seminar-speaker {
+.mainer #Schedule .schedule-card .seminar-card {
     font-weight: bold;
     /*color: #f77e7e;*/
     color: #873307;
     padding: 0 0 0.5em 0.5em;
     /*margin: 5px auto;*/
-    width: 250px;
+    width: 100%;
     /*border-bottom: 1px solid rgba(0, 26, 250, 0.12);*/
 }
 
-.mainer #Organizers .organizer-card .author-link-href {
+.mainer #Schedule .schedule-card .author-link-href {
     /*text-decoration-color: #f77e7e;*/
     text-decoration-color: #873307;
     font-size: max(14px,1.25em);
 }
 
-.mainer #Organizers .organizer-card .seminar-speaker-affiliation {
+.mainer #Schedule .schedule-card .seminar-card-affiliation {
     font-weight: bold;
     color: #525252;
     padding: 0 0 0.5em 0;
@@ -374,7 +396,7 @@ a:hover {
     /*border-bottom: 1px solid rgba(0, 26, 250, 0.12);*/
 }
 
-.mainer #Organizers .organizer-card .affiliation-link-href {
+.mainer #Schedule .schedule-card .affiliation-link-href {
     text-decoration-color: #525252;
 }
 
@@ -442,7 +464,7 @@ a:hover {
 
 
 
-.mainer #Talks .author-card .seminar-speaker {
+.mainer #Talks .author-card .seminar-card {
     font-weight: bold;
     /*color: #f77e7e;*/
     color: #873307;
@@ -459,7 +481,7 @@ a:hover {
     font-size: max(14px,1.25em);
 }
 
-.mainer #Talks .author-card .seminar-speaker-affiliation {
+.mainer #Talks .author-card .seminar-card-affiliation {
     font-weight: bold;
     color: #525252;
     padding: 0 0 0.5em 0;
@@ -493,6 +515,8 @@ a:hover {
     color: #365d7999;
     line-height: 1.6;
 }
+
+
 
 .mainer #Talks .seminar .seminar-notes {
     color: #a70101a8;
@@ -599,7 +623,7 @@ a:hover {
     color: #ab3c3cd9;
 }
 
-#seminarHome .seminar-speaker {
+#seminarHome .seminar-card {
     text-align: center;
     font-style: italic;
     font-family: Lora, Georgia, Cambria, Times, "Times New Roman", Serif;
@@ -712,7 +736,7 @@ a:hover {
     border-radius: 50%;
 }
 
-#SpeakerPageHolder .author-card .seminar-speaker {
+#SpeakerPageHolder .author-card .seminar-card {
     font-weight: bold;
     /*color: #f77e7e;*/
     color: #873307;
@@ -729,7 +753,7 @@ a:hover {
     font-size: max(14px, 1.5em);
 }
 
-#SpeakerPageHolder .author-card .seminar-speaker-affiliation {
+#SpeakerPageHolder .author-card .seminar-card-affiliation {
     font-weight: bold;
     color: #525252;
     padding: 0 0 0.5em 0;
