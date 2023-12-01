@@ -5,7 +5,7 @@
 
 # Now Git changes
 git add -A
-git commit -m"content changes"
+git commit -m "content changes"
 git push
 
 
